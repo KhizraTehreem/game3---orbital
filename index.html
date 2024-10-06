@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Exoplanet Orbit Classification Game</title>
+</head>
+<body>
+    <div class="starry-background">
+        <div class="star"></div>        <div class="star"></div>
+        <div class="star"></div>        <div class="star"></div>
+        <div class="star"></div>        <div class="star"></div>
+        <div class="star"></div>        <div class="star"></div>  
+        <div class="star"></div>        <div class="star"></div>
+        <div class="star"></div>        <div class="star"></div>   
+        <div class="star"></div>        <div class="star"></div>
+        <div class="star"></div>        <div class="star"></div>
+        <div class="star"></div>        <div class="star"></div>
+        <div class="star"></div>        <div class="star"></div>
+        <div class="star"></div>        <div class="star"></div>
+        <div class="star"></div>        <div class="star"></div>
+        <div class="star"></div>        <div class="star"></div>
+        <div class="star"></div>        <div class="star"></div>  
+        <div class="star"></div>        <div class="star"></div>
+        <div class="star"></div>        <div class="star"></div>   
+        <div class="star"></div>        <div class="star"></div>
+        <div class="star"></div>        <div class="star"></div>
+        <div class="star"></div>        <div class="star"></div>
+        <div class="star"></div>        <div class="star"></div>
+        <div class="star"></div>        <div class="star"></div>
+        <div class="star"></div>        <div class="star"></div>
+        <div class="star"></div>        <div class="star"></div>
+        <div class="star"></div>        <div class="star"></div>  
+        
+    </div>
+        <h1>Exoplanet Orbit Classification Game</h1>
+        <p>Drag the exoplanets to the habitable orbits based on their temperature zones. Good luck!</p>
+    
+        <!-- Orbits -->
+        <div class="orbit orbit1" data-zone="hot"></div>
+        <div class="orbit orbit2" data-zone="cold"></div>
+        <div class="orbit orbit3" data-zone="habitable"></div>
+        
+        <!-- Center Star -->
+        <div id="center-star"></div>
+    
+        <!-- Sidebar with draggable exoplanets -->
+        <div class="sidebar"><h1>Select Exoplanets</h1>
+                        <div id="WASP-12b" class="planet" draggable="true" style="background-color: rgb(87, 0, 90);" data-type="hot"></div>
+            <div id="Kepler-452b" class="planet" draggable="true" style="background-color: rgb(75, 41, 3);" data-type="habitable"></div>
+            <div id="Proxima Centauri b" class="planet" draggable="true" style="background-color: rgb(146, 32, 4);" data-type="cold"></div>
+            <div id="HD 209458b" class="planet" draggable="true" style="background-color: rgb(232, 23, 92);" data-type="hot"></div>
+            <div id="LHS 1140 b" class="planet" draggable="true" style="background-color: rgb(118, 38, 105);" data-type="habitable"></div>
+            <div id="Gliese 581g" class="planet" draggable="true" style="background-color: rgb(123, 76, 10);" data-type="habitable"></div>
+        </div>
+    
+        <!-- Orbit color coding legend -->
+        <div class="legend">
+            <h3>Orbit Keys</h3>
+            <p style="color: red;">▶️ Hot Orbit</p>
+            <p style="color: blue;">▶️ Cold Orbit</p>
+            <p style="color: green;">▶️ Habitable Zone</p>
+        </div>
+    
+        <!-- Planet color coding legend -->
+        <div class="planet-legend">
+            <h3>Planet Keys</h3>
+            <p style="color: rgb(87, 0, 90);">▶️ WASP-12b</p>
+            <p style="color: rgb(75, 41, 3);">▶️ Kepler-452b</p>
+            <p style="color: rgb(146, 32, 4);">▶️ Proxima Centauri b</p>
+            <p style="color: rgb(232, 23, 92);">▶️ HD 209458b</p>
+            <p style="color: rgb(118, 38, 105);">▶️ LHS 1140 b</p>
+            <p style="color: rgb(123, 76, 10);">▶️ Gliese 581g</p>
+        </div>
+    
+        <!-- Alert Box -->
+<div id="alert" class="hidden">
+    <p id="alert-message"></p>
+    <button id="close-alert"> X</button>
+</div>
+
+    
+        <script src="app.js"></script>
+    </body>
+    </html>
+    
